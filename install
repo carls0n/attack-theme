@@ -1,0 +1,32 @@
+# Execute this script - sh install
+
+# This theme has been tested on OpenBSD with XFCE4 only.
+
+# If this script fails to change your desktop background color, the color is #888A85.
+# For a matching terminal, create a custom background color #404040 and choose
+# solid background.
+
+# If you want to install this theme manually, simply move Attack to ~/.themes and Mint-Y-Grey
+# to ~/.icons. Right click on desktop, choose Applications > Settings > Appearance and choose
+# Attack. Be sure that you select "Set matching xfwm4 theme if there is one" at the bottom.
+# Click on the icons tab and choose Mint-Y-Grey.
+
+printf "Installing theme...\n"
+[[ ! -d ~/.themes ]] && mkdir ~/.themes
+cp -R Attack ~/.themes/
+[[ ! -d ~/.icons ]] && mkdir ~/.icons
+cp -R Mint-Y-Grey ~/.icons/
+
+xfconf-query -c xsettings -p /Net/ThemeName -t "string" -s Attack --create
+xfconf-query -c xsettings -p /Net/IconThemeName -t "string" -s Mint-Y-Grey --create
+
+xfconf-query -c xfwm4 -p /general/theme -s Attack
+xfconf-query -c xfwm4 -p /general/title_alignment -s right
+xfconf-query -c xfwm4 -p /general/frame_opacity -s 89
+xfconf-query -c xfwm4 -p /general/inactive_opacity -s 89
+
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/color-style -s 0
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/image-style -s 0
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/rgba1 -a -t double -t double -t double -t double \
+-s 0.533333 -s 0.541176 -s 0.521569 -s 1.000000 --create
+printf "Finished installing Attack theme.\n"
