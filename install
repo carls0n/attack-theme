@@ -25,6 +25,8 @@ xfconf-query -c xfwm4 -p /general/title_alignment -s right
 xfconf-query -c xfwm4 -p /general/frame_opacity -s 89
 xfconf-query -c xfwm4 -p /general/inactive_opacity -s 89
 
+xfconf-query -c xfce4-notifyd -p /theme -t string --set Attack --create
+
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/color-style -s 0
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/image-style -s 0
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/rgba1 -a -t double -t double -t double -t double \
