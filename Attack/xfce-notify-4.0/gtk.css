@@ -1,11 +1,11 @@
 #XfceNotifyWindow {
     color: #ffffff;
-    background-color: shade(#404040, 10);
+    background-color: #404040;
     border-radius: 10px;
-    padding: 10px;
-    border: 1px solid shade(#000000, 10);
+    padding: 10px 0;
+    border: 1px solid #404040;
 }
 
 #XfceNotifyWindow label#summary {
-    font-weight: bold;
+    font-weight: Bold;
 }
