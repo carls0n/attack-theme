@@ -9,3 +9,7 @@
 #XfceNotifyWindow label#summary {
     font-weight: Bold;
 }
+#XfceNotifyWindow label#body {
+    font-weight: normal;
+    color: #ffffff;
+}
