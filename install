@@ -11,6 +11,8 @@
 # Attack. Be sure that you select "Set matching xfwm4 theme if there is one" at the bottom.
 # Click on the icons tab and choose Mint-Y-Grey.
 
+# My other repositories: https://github.com/carls0n/
+
 printf "Installing theme...\n"
 [[ ! -d ~/.themes ]] && mkdir ~/.themes
 cp -R Attack ~/.themes/
