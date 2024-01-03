@@ -4,7 +4,7 @@
 
 # If this script fails to change your desktop background color, the color is #888A85.
 # For a matching terminal, create a custom background color #404040 and choose
-# solid background. Script will automatically change terminal color.
+# solid background. Note: Updated script will now automatically change terminal color.
 
 # If you want to install this theme manually, simply move Attack to ~/.themes and Mint-Y-Grey
 # to ~/.icons. Right click on desktop, choose Applications > Settings > Appearance and choose
