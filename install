@@ -4,7 +4,7 @@
 
 # If this script fails to change your desktop background color, the color is #888A85.
 # For a matching terminal, create a custom background color #404040 and choose
-# solid background.
+# solid background. Script will automatically change terminal color.
 
 # If you want to install this theme manually, simply move Attack to ~/.themes and Mint-Y-Grey
 # to ~/.icons. Right click on desktop, choose Applications > Settings > Appearance and choose
@@ -33,4 +33,7 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w conn
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/image-style -s 0
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/rgba1 -a -t double -t double -t double -t double \
 -s 0.533333 -s 0.541176 -s 0.521569 -s 1.000000 --create
+
+xfconf-query -c xfce4-terminal -p /color-background -t "string" -s "#404040"
+xfconf-query -c xfce4-terminal -p /color-foreground -t "string" -s "#ffffff"
 printf "Finished installing Attack theme.\n"
