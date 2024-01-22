@@ -11,6 +11,10 @@
 # Attack. Be sure that you select "Set matching xfwm4 theme if there is one" at the bottom.
 # Click on the icons tab and choose Mint-Y-Grey.
 
+# Installs attack.theme to ~/.local/share/xfce4/terminal/colorschemes/
+# You can set Attack theme colors int he suture on your terminal by right clicking in terminal
+# Right click > Preferences > Click Colors tab and under Preset > Select Preset > Attack
+
 # My other repositories: https://github.com/carls0n/
 
 printf "Installing theme...\n"
@@ -18,6 +22,7 @@ printf "Installing theme...\n"
 cp -R Attack ~/.themes/
 [[ ! -d ~/.icons ]] && mkdir ~/.icons
 cp -R Mint-Y-Grey ~/.icons/
+cp attack.theme ~/.local/share/xfce4/terminal/colorschemes/
 
 xfconf-query -c xsettings -p /Net/ThemeName -t "string" -s Attack --create
 xfconf-query -c xsettings -p /Net/IconThemeName -t "string" -s Mint-Y-Grey --create
