@@ -22,6 +22,7 @@ printf "Installing theme...\n"
 cp -R Attack ~/.themes/
 [[ ! -d ~/.icons ]] && mkdir ~/.icons
 cp -R Mint-Y-Grey ~/.icons/
+[[ ! -d ~/.local/share/xfce4/terminal/colorschemes/ ]] && mkdir -p ~/.local/share/xfce4/terminal/colorschemes
 cp attack.theme ~/.local/share/xfce4/terminal/colorschemes/
 
 xfconf-query -c xsettings -p /Net/ThemeName -t "string" -s Attack --create
