@@ -2298,7 +2298,7 @@ radio {
   popover check.right:dir(ltr), popover radio.right:dir(ltr) {
     margin-left: 12px;
     margin-right: 0; }
-  check,
+/*  check,
   radio {
     background-clip: padding-box;
     background-image: linear-gradient(to bottom, #ebebeb 15%, white);
@@ -2355,6 +2355,7 @@ radio {
     background-image: linear-gradient(to bottom, #cfcfcf 15%, #e3e3e3);
     border-color: #a3a3a3;
     color: #7c7c7c; }
+*/
   .osd check, .osd radio {
     color: #eeeeec;
     border-color: rgba(0, 0, 0, 0.7);
