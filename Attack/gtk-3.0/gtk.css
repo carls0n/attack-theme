@@ -4064,13 +4064,13 @@ radio {
     -gtk-icon-source: url("images/radio-unchecked.png");
 }
 radio:checked {
-    -gtk-icon-source: url("images/radio-checked.png");
+    -gtk-icon-source: url("images/new.png");
 }
 check {
 -gtk-icon-source: url("images/unchecked.png");
 }
 check:checked{
-    -gtk-icon-source: url("images/checked.png");
+    -gtk-icon-source: url("images/white-checked.png");
 }
 .menuitem check,
 menuitem check:checked:hover{
