@@ -4066,6 +4066,10 @@ radio {
 radio:checked {
     -gtk-icon-source: url("images/new.png");
 }
+radio:checked:hover
+{
+-gtk-icon-source: url("images/new.png");
+}
 check {
 -gtk-icon-source: url("images/unchecked.png");
 }
@@ -4076,10 +4080,10 @@ check:checked{
 menuitem check:checked:hover{
     -gtk-icon-source: url("images/white-checked.png");
 }
-.menuitem radio,
+/*.menuitem radio,
 menuitem radio:checked:hover{
   -gtk-icon-source: url("images/white-radio-checked.png");
-}
+}*/
 
 scale slider,
 scale.horizontal slider {
