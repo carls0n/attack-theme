@@ -4083,6 +4083,7 @@ menuitem radio:checked:hover{
 
 scale slider,
 scale.horizontal slider {
+  border: 0px;
     background-image: url("images/radio-unchecked.png");
 }
 scale trough {
