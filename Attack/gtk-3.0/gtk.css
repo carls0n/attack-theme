@@ -2287,7 +2287,7 @@ radio {
   margin: 0 4px;
   min-height: 14px;
   min-width: 14px;
-  border: 1px solid;
+  border: 0px solid;
   -gtk-icon-source: none; }
   check:only-child,
   radio:only-child {
