@@ -4061,6 +4061,7 @@ menu > menuitem:hover,
 }
 
 radio {
+border: 0px;
     -gtk-icon-source: url("images/radio-unchecked.png");
 }
 radio:checked {
@@ -4070,20 +4071,31 @@ radio:checked:hover
 {
 -gtk-icon-source: url("images/new.png");
 }
+.menuitem radio,
+menuitem radio:hover
+{
+-gtk-icon-source: url("images/radio-hover.png");
+}
+
+.menuitem check,
+menuitem check:hover
+{
+max-width: 14px;
+max height: 14px;
+-gtk-icon-source: url("images/unchecked-box.png");
+}
+
 check {
 -gtk-icon-source: url("images/unchecked.png");
 }
 check:checked{
     -gtk-icon-source: url("images/white-checked.png");
 }
+
 .menuitem check,
 menuitem check:checked:hover{
     -gtk-icon-source: url("images/white-checked.png");
 }
-/*.menuitem radio,
-menuitem radio:checked:hover{
-  -gtk-icon-source: url("images/white-radio-checked.png");
-}*/
 
 scale slider,
 scale.horizontal slider {
