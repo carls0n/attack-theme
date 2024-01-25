@@ -3756,11 +3756,62 @@ vte-terminal.terminal-screen {
 
 /* Mousepad */
 /*.mousepad .view text selection{ background-color: #d3d3d3;}*/
-.mousepad menu menuitem {
-background-color: #d3d3d3;}
+/*.mousepad menu menuitem {
+background-color: #d3d3d3;}*/
+
+
+/**************************************
+* mousepad check boxes *
+**************************************/
+.mousepad menu menuitem check,
+menuitem check
+{
+    -gtk-icon-source: url("images/unchecked.png");
+}
+
+.mousepad menu menuitem check:checked,
+menuitem check:checked
+{
+    -gtk-icon-source: url("images/white-checked.png");
+}
+
+.mousepad menu menuitem:hover check,
+menuitem check:hover
+{
+    -gtk-icon-source: url("images/unchecked-box.png");
+}
+
+.mousepad menu menuitem:hover check:checked,
+menuitem check:hover
+{
+    -gtk-icon-source: url("images/white-checked.png");
+}
+
+/**************************************
+* mousepad radio buttons *
+**************************************/
+
+.mousepad menu menuitem radio,
+menuitem radio
+{
+    -gtk-icon-source: url("images/radio-unchecked.png");
+}
+
+.mousepad menu menuitem radio:checked,
+menuitem radio:checked
+{
+    -gtk-icon-source: url("images/white-radio-checked_1.png");
+}
+
+.mousepad menu menuitem :hover radio,
+menuitem radio:hover
+{
+    -gtk-icon-source: url("images/radio-hover.png");
+}
 
 /*******
  * Xed *
+{
  *******/
 .xed-window .xed-searchbar {
   border-top: 1px solid #8a8a8a; }
@@ -4060,6 +4111,7 @@ menu > menuitem:hover,
       color: #ffffff; 
 }
 
+/****************************************************/
 radio {
 border: 0px;
     -gtk-icon-source: url("images/radio-unchecked.png");
@@ -4071,17 +4123,13 @@ radio:checked:hover
 {
 -gtk-icon-source: url("images/new.png");
 }
-.menuitem radio,
-menuitem radio:hover
+radio:hover
 {
 -gtk-icon-source: url("images/radio-hover.png");
 }
-
-.menuitem check,
-menuitem check:hover
+/**************************************************/
+check:hover
 {
-max-width: 14px;
-max height: 14px;
 -gtk-icon-source: url("images/unchecked-box.png");
 }
 
@@ -4092,10 +4140,10 @@ check:checked{
     -gtk-icon-source: url("images/white-checked.png");
 }
 
-.menuitem check,
-menuitem check:checked:hover{
+check:checked:hover{
     -gtk-icon-source: url("images/white-checked.png");
 }
+/**************************************************/
 
 scale slider,
 scale.horizontal slider {
