@@ -3756,8 +3756,8 @@ vte-terminal.terminal-screen {
 
 /* Mousepad */
 /*.mousepad .view text selection{ background-color: #d3d3d3;}*/
-/*.mousepad menu menuitem {
-background-color: #d3d3d3;}*/
+.mousepad menu  {
+background-color: #d3d3d3;}
 
 
 /**************************************
