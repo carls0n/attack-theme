@@ -3781,7 +3781,7 @@ menuitem check:hover
     -gtk-icon-source: url("images/unchecked-box.png");
 }
 
-.mousepad menu menuitem:hover check:checked,
+.mousepad menu menuitem :hover check:checked,
 menuitem check:hover
 {
     -gtk-icon-source: url("images/white-checked.png");
