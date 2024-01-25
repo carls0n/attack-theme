@@ -3756,10 +3756,8 @@ vte-terminal.terminal-screen {
 
 /* Mousepad */
 /*.mousepad .view text selection{ background-color: #d3d3d3;}*/
-
 .mousepad menu menuitem {
 background-color: #d3d3d3;}
-
 
 /**************************************
 * mousepad check boxes *
@@ -3812,7 +3810,6 @@ menuitem radio:hover
 {
     -gtk-icon-source: url("images/radio-hover.png");
 }*/
-
 
 
 /*******
@@ -4123,15 +4120,23 @@ border: 0px;
 radio:checked {
     -gtk-icon-source: url("images/new.png");
 }
-radio:checked:hover {
-    -gtk-icon-source: url("images/white-radio-checked_1.png");
+radio:checked:hover
+{
+-gtk-icon-source: url("images/new.png");
 }
-
-radio:hover
+.menuitem radio,
+menuitem radio:hover
 {
 -gtk-icon-source: url("images/radio-hover.png");
 }
 
+.menuitem check,
+menuitem check:hover
+{
+max-width: 14px;
+max height: 14px;
+-gtk-icon-source: url("images/unchecked-box.png");
+}
 
 check {
 -gtk-icon-source: url("images/unchecked.png");
@@ -4140,13 +4145,9 @@ check:checked{
     -gtk-icon-source: url("images/white-checked.png");
 }
 
-check:checked:hover
-{
+.menuitem check,
+menuitem check:checked:hover{
     -gtk-icon-source: url("images/white-checked.png");
-}
-
-check:hover {
-  -gtk-icon-source: url("images/unchecked-box.png");
 }
 
 scale slider,
