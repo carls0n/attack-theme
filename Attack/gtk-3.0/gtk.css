@@ -4119,8 +4119,6 @@ menu > menuitem:hover,
       background-color: #d3d3d3;
       color: #ffffff; 
 }
-
-/****************************************************/
 radio {
 border: 0px;
     -gtk-icon-source: url("images/radio-unchecked.png");
@@ -4132,13 +4130,17 @@ radio:checked:hover
 {
 -gtk-icon-source: url("images/new.png");
 }
-radio:hover
+.menuitem radio,
+menuitem radio:hover
 {
 -gtk-icon-source: url("images/radio-hover.png");
 }
-/**************************************************/
-check:hover
+
+.menuitem check,
+menuitem check:hover
 {
+max-width: 14px;
+max height: 14px;
 -gtk-icon-source: url("images/unchecked-box.png");
 }
 
@@ -4149,15 +4151,16 @@ check:checked{
     -gtk-icon-source: url("images/white-checked.png");
 }
 
-check:checked:hover{
+.menuitem check,
+menuitem check:checked:hover{
     -gtk-icon-source: url("images/white-checked.png");
 }
-/**************************************************/
+
 
 scale slider,
 scale.horizontal slider {
   border: 0px;
-    background-image: url("images/radio-unchecked.png");
+    background-image: url("images/unchecked.png");
 }
 scale trough {
     background: #d3d3d3;
