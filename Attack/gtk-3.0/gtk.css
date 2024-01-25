@@ -4139,8 +4139,6 @@ menuitem radio:hover
 .menuitem check,
 menuitem check:hover
 {
-max-width: 14px;
-max height: 14px;
 -gtk-icon-source: url("images/unchecked-box.png");
 }
 
