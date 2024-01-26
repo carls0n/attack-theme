@@ -4128,7 +4128,7 @@ radio:checked {
 }
 radio:checked:hover
 {
--gtk-icon-source: url("images/new.png");
+-gtk-icon-source: url("images/radio-check.png");
 }
 .menuitem radio,
 menuitem radio:hover
