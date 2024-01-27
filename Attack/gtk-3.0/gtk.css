@@ -3835,6 +3835,11 @@ menuitem radio:hover
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
+
+.xed-window .context-menu {
+background-color: #d3d3d3;
+}
+
 /**********
  * Thunar *
  **********/
