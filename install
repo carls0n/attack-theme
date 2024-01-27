@@ -1,6 +1,6 @@
-# Execute this script - sh install
+# chmod 755 install and execute ./install
 
-# This theme has been tested on OpenBSD with XFCE4 only.
+# Linux users will need to install gtk3-nocsd.
 
 # If this script fails to change your desktop background color, the color is #888A85.
 # For a matching terminal, create a custom background color #404040 and choose
