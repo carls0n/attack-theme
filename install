@@ -15,8 +15,8 @@
 # You can set Attack theme colors in the future on your terminal by right clicking in terminal
 # Right click > Preferences > Click Colors tab and under Presets > Select Preset > Attack
 
-# Added  OpenBSD support for Whisker Menu. Also added rounded corners on whisker menu
-# RIght click on whisker menu and click properties and then reduce opacity by even 1% to get 
+# Added OpenBSD support for Whisker Menu. Also added rounded corners on whisker menu
+# Right click on whisker menu and click properties and then reduce opacity by even 1% to get 
 # rid of ugly black at the corners.
 
 # My other repositories: https://github.com/carls0n/
