@@ -1,6 +1,6 @@
-# Execute this script - sh install
+# chmod 755 install and execute this script. ./install
 
-# This theme has been tested on OpenBSD with XFCE4 only.
+# If you are using Linux, be sure to install gtk3-nocsd first before installing this theme.
 
 # If this script fails to change your desktop background color, the color is #888A85.
 # For a matching terminal, create a custom background color #404040 and choose
@@ -16,7 +16,7 @@
 # Right click > Preferences > Click Colors tab and under Presets > Select Preset > Attack
 
 # Added  OpenBSD support for Whisker Menu. Also added rounded corners on whisker menu
-# Right click on whisker menu and click properties and then reduce opacity by even 1% to get 
+# RIght click on whisker menu and click properties and then reduce opacity by even 1% to get 
 # rid of ugly black at the corners.
 
 # My other repositories: https://github.com/carls0n/
