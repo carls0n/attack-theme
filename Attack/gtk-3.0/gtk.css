@@ -11,7 +11,7 @@
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 20;
   -GtkWidget-text-handle-height: 24;
-  -GtkDialog-button-spacing: 6;
+  -GtkDialog-button-spacing: 0;
   -GtkDialog-action-area-border: 6;
   -GtkDialog-content-area-border: 6;
   outline-color: alpha(currentColor,0);
@@ -397,10 +397,10 @@ treeview entry.flat, treeview entry {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.7); }
   :not(:backdrop) .entry-tag.button:hover {
-    border: 1px solid #404040;
+    border: 1px solid #d3d3d3;
     color: #ffffff; }
   :not(:backdrop) .entry-tag.button:active {
-    background-color: #404040;
+    background-color: #d3d3d3;
     color: rgba(255, 255, 255, 0.7); }
 
 /***********
@@ -448,8 +448,8 @@ background-color: #404040;
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
   button:active,
   button:checked {
-    color: #ffffff;
-background-color: #404040;
+    color: #000000;
+background-color: transparent;
     border-color: #8a8a8a;
     /*background-image: linear-gradient(to bottom, #9e9e9e, #b0b0b0 30%, #b0b0b0);*/
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
@@ -3835,11 +3835,6 @@ menuitem radio:hover
   border-width: 0 1px 1px 1px;
   border-style: solid; }
 
-
-.xed-window .context-menu {
-background-color: #d3d3d3;
-}
-
 /**********
  * Thunar *
  **********/
@@ -4202,3 +4197,29 @@ switch:checked {
   background-image: -gtk-scaled(url("images/on.png"), url("images/on.png")); }
 switch:disabled {
   background-image: -gtk-scaled(url("images/blank.png"), url("images/blank.png")); }
+
+/*****************************************
+* Desktop icon text color                              *
+*****************************************/
+XfdesktopIconView.label {
+        color: #000000;
+background-color: #888A85;
+}
+
+/**************************************************
+* Whisker Menu (for OpenBSD) and rounded corners  *
+**************************************************/
+
+#whiskermenu-window {
+	border-radius: 12px;
+}
+
+#whiskermenu-window button:hover {
+	background-color: transparent;
+       color: #000000;
+}
+
+#whiskermenu-button label {
+    color: #ffffff;
+   }
+
