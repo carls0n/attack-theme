@@ -1,6 +1,6 @@
-# chmod 755 install and execute ./install
+# Execute this script - sh install
 
-# Linux users will need to install gtk3-nocsd.
+# This theme has been tested on OpenBSD with XFCE4 only.
 
 # If this script fails to change your desktop background color, the color is #888A85.
 # For a matching terminal, create a custom background color #404040 and choose
@@ -13,7 +13,11 @@
 
 # Installs attack.theme to ~/.local/share/xfce4/terminal/colorschemes/
 # You can set Attack theme colors in the future on your terminal by right clicking in terminal
-# Right click > Preferences > Click Colors tab and under Preset > Select Preset > Attack
+# Right click > Preferences > Click Colors tab and under Presets > Select Preset > Attack
+
+# Added  OpenBSD support for Whisker Menu. Also added rounded corners on whisker menu
+# RIght click on whisker menu and click properties and then reduce opacity by even 1% to get 
+# rid of ugly black at the corners.
 
 # My other repositories: https://github.com/carls0n/
 
