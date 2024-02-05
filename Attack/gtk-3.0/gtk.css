@@ -4105,7 +4105,7 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
   border-radius: 6px; }
 
 .xfce4-panel {
-    background-color: rgba(36, 36, 36, 0.8); }
+    background-color: #404040; }
 .xfce4-panel .tasklist .toggle {
     background-color: #d3d3d3;
     color: black;
