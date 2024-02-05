@@ -11,4 +11,4 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w conn
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/rgba1 -a -t double -t double \
 -t double -t double -s 0.533333 -s 0.541176 -s 0.521569 -s 1.000000 --create && exit
 
-[ $1 != classic ] || [ $1 != wallpaper ] && echo Please choose classic or contempoaray && exit
+[ $1 != classic ] || [ $1 != wallpaper ] && echo Please choose classic or wallpaper && exit
