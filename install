@@ -19,6 +19,9 @@
 # Right click on whisker menu and click properties and then reduce opacity by even 1% to get 
 # rid of ugly black at the corners.
 
+# I have added, in this directory a script called attack.sh, which will toggle classic mode (solid color)
+# and wallpaper. chmod 755 attack.sh, ./attack.sh wallpaper.
+
 # My other repositories: https://github.com/carls0n/
 
 printf "Installing theme...\n"
@@ -50,4 +53,5 @@ xfconf-query -c xfce4-panel -p /panels/panel-1/background-rgba -a -t double -t d
 
 xfconf-query -c xfce4-terminal -p /color-background -t "string" -s "#404040" --create
 xfconf-query -c xfce4-terminal -p /color-foreground -t "string" -s "#ffffff" --create
+
 printf "Finished installing Attack theme.\n"
