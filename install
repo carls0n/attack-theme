@@ -47,6 +47,10 @@ xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w conn
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor`xrandr | grep -w connected | awk '{print $1}'`/workspace0/rgba1 -a -t double -t double -t double -t double \
 -s 0.533333 -s 0.541176 -s 0.521569 -s 1.000000 --create
 
+xfconf-query -c xfce4-panel -p /panels/panel-1/background-style -t int -s 0 --create
+#xfconf-query -c xfce4-panel -p /panels/panel-1/background-rgba -a -t double -t double -t double -t double \
+#-s 0.250980 -s 0.250980 -s 0.250980 -s 1.000000 --create
+
 xfconf-query -c xfce4-terminal -p /color-background -t "string" -s "#404040" --create
 xfconf-query -c xfce4-terminal -p /color-foreground -t "string" -s "#ffffff" --create
 
